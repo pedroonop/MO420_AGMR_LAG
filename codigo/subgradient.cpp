@@ -68,7 +68,7 @@ dd subgradient(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &sol
 		}
 
 		pair<int, vector<bool> > fixed = heuristic(g, xk, yk);
-		printf("iteration %d - current dual: %lf, current primal: %d\n", k, zk, fixed.ff);
+		printf("iteration %d: current dual = %lf, current primal = %d\n", k, zk, fixed.ff);
 
 		if (zk > best_dual){
 			best_dual = zk;
