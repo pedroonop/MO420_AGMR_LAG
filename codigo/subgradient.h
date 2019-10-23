@@ -4,6 +4,8 @@
 #ifndef SUBGRADIENT_H
 #define SUBGRADIENT_H
 
-dd subgradient(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &solution);
+di subgradient(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &solution);
+
+di subgradient_preprocess(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &solution);
 
 #endif

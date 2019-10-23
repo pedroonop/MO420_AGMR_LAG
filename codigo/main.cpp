@@ -16,9 +16,9 @@ int main(const int argc, const char *argv[]){
 
 	int dk = -1, pk = -1;
 	vector<bool> solution;
-	dd r = subgradient(g, maxk, ek, dk, pk, solution);
+	di r = subgradient_preprocess(g, maxk, ek, dk, pk, solution);
 
-	printf("%lf %lf\n", r.ff, r.ss);
+	printf("%lf %d\n", r.ff, r.ss);
 
 	return 0;
 }
