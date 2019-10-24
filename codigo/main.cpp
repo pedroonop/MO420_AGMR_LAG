@@ -10,8 +10,6 @@ int main(const int argc, const char *argv[]){
 		exit(1);
 	}
 
-	time_t start_time = time(NULL);
-
 	graph g = read_graph(argv[1]);
 	int maxk = stoi(argv[2]);
 	int time_limit = stoi(argv[3]);
@@ -26,11 +24,7 @@ int main(const int argc, const char *argv[]){
 
 	printf("%lf %d\n", r.ff, dk);
 	printf("%d %d\n", r.ss, pk);
-
-	time_t final_time = time(NULL);
-	double spent_time = final_time - start_time;
-
-	printf("%lf\n", spent_time);
+	printf("%d\n", maxk);
 
 	return 0;
 }
