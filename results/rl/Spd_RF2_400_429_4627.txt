@@ -1,0 +1,15 @@
+iteration 0: new best dual = 38.000000
+iteration 0: new best primal = 120
+iteration 1: new best dual = 43.998884
+iteration 2: new best dual = 49.624555
+iteration 3: new best dual = 52.577315
+iteration 4: new best dual = 53.352097
+iteration 5: new best dual = 53.586583
+iteration 6: new best dual = 53.690494
+iteration 7: new best dual = 53.724409
+iteration 8: new best dual = 53.768507
+iteration 10: new best dual = 53.792670
+iteration 12: new best dual = 53.800000
+53.800000 12
+120 -1
+11.000000

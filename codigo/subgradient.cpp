@@ -5,8 +5,11 @@
 #include "inspect.h"
 #include "heuristic.h"
 #include "preprocess.h"
+#include "ch.h"
 
-di subgradient(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &solution){
+di subgradient(graph g, int kmax, int time_limit, double ek, int &dk, int &pk, vector<bool> &solution){
+	time_t start_time = time(NULL);
+	
 	bool verbose = false;
 	double best_dual = 0;
 	int best_primal = INF;
@@ -29,8 +32,12 @@ di subgradient(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &sol
 	}
 
 	int last_update = 0;
-
+	
 	for (int k = 0; k < kmax; k++){
+		time_t current_time = time(NULL);
+		double spent_time = current_time - start_time;
+		if (spent_time > time_limit) break;
+
 		if (k - max(last_update, dk) > 30){
 			ek = ek / 2;
 			last_update = k;
@@ -122,7 +129,9 @@ di subgradient(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &sol
 	return make_pair(best_dual, best_primal);
 }
 
-di subgradient_preprocess(graph g, int kmax, double ek, int &dk, int &pk, vector<bool> &solution){
+di subgradient_preprocess(graph g, int kmax, int time_limit, double ek, int &dk, int &pk, vector<bool> &solution){
+	time_t start_time = time(NULL);
+
 	bool verbose = false;
 	double best_dual = 0;
 	int best_primal = INF;
@@ -143,12 +152,27 @@ di subgradient_preprocess(graph g, int kmax, double ek, int &dk, int &pk, vector
 	for (int v : V_){
 		lambda[v] = 1.0 / max_du;
 	}
+	vector<int> branches = preprocess(g);
+
+	best_dual = branches.size();
+	if (best_dual > 0){
+		printf("iteration -1: ");
+		printf("new best dual = %lf\n", best_dual);
+	}
+
+	pair<int, vector<bool> > ch = construcive_heuristic(g, 100, 0);
+	best_primal = ch.ff;
+	solution = ch.ss;
+	printf("iteration -1: ");
+	printf("new best primal = %d\n", ch.ff);
 
 	int last_update = 0;
 
-	vector<int> branches = preprocess(g);
-
 	for (int k = 0; k < kmax; k++){
+		time_t current_time = time(NULL);
+		double spent_time = current_time - start_time;
+		if (spent_time > time_limit) break;
+
 		if (k - max(last_update, dk) > 30){
 			ek = ek / 2;
 			last_update = k;

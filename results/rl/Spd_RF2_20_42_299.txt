@@ -1,0 +1,8 @@
+iteration 0: new best primal = 4
+iteration 3: new best primal = 3
+iteration 11: new best primal = 2
+iteration 29: new best primal = 1
+iteration 47: new best primal = 0
+0.000000 -1
+0 -1
+11.000000

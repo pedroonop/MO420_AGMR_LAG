@@ -1,0 +1,14 @@
+iteration 0: new best primal = 9
+iteration 3: new best primal = 8
+iteration 13: new best primal = 7
+iteration 20: new best primal = 6
+iteration 21: new best primal = 5
+iteration 34: new best primal = 4
+iteration 206: new best primal = 3
+iteration 1424: new best dual = 0.000000
+iteration 1476: new best dual = 0.000000
+iteration 1510: new best dual = 0.000000
+iteration 1543: new best dual = 0.000000
+0.000000 1543
+3 -1
+11.000000

@@ -5,20 +5,32 @@
 
 int main(const int argc, const char *argv[]){
 
-	if (argc < 4){
-		printf("./main <caminho_arquivo> <max_iteracoes> <ek>\n");
+	if (argc < 6){
+		printf("./main <caminho_arquivo> <max_iteracoes> <tempo limite> <ek> <pre_processamento>\n");
 		exit(1);
 	}
 
+	time_t start_time = time(NULL);
+
 	graph g = read_graph(argv[1]);
 	int maxk = stoi(argv[2]);
-	double ek = stod(argv[3]);
+	int time_limit = stoi(argv[3]);
+	double ek = stod(argv[4]);
+	int type = stoi(argv[5]);
 
 	int dk = -1, pk = -1;
 	vector<bool> solution;
-	di r = subgradient_preprocess(g, maxk, ek, dk, pk, solution);
+	di r;
+	if (type) r = subgradient_preprocess(g, maxk, time_limit, ek, dk, pk, solution);
+	else r = subgradient(g, maxk, time_limit, ek, dk, pk, solution);
 
-	printf("%lf %d\n", r.ff, r.ss);
+	printf("%lf %d\n", r.ff, dk);
+	printf("%d %d\n", r.ss, pk);
+
+	time_t final_time = time(NULL);
+	double spent_time = final_time - start_time;
+
+	printf("%lf\n", spent_time);
 
 	return 0;
 }

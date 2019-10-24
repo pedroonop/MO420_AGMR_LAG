@@ -1,0 +1,42 @@
+iteration -1: new best dual = 90.000000
+iteration -1: new best primal = 152
+iteration 3: new best dual = 94.318509
+iteration 4: new best dual = 99.034911
+iteration 5: new best dual = 103.197110
+iteration 6: new best dual = 106.830735
+iteration 7: new best dual = 109.986358
+iteration 8: new best dual = 112.690742
+iteration 9: new best dual = 113.327774
+iteration 10: new best dual = 113.374005
+iteration 11: new best dual = 113.442437
+iteration 12: new best dual = 113.464205
+iteration 13: new best dual = 113.507321
+iteration 15: new best dual = 113.511871
+iteration 16: new best dual = 113.523627
+iteration 17: new best dual = 113.525855
+iteration 18: new best dual = 113.527501
+iteration 20: new best dual = 113.532823
+iteration 53: new best dual = 113.546346
+iteration 117: new best dual = 113.549087
+iteration 181: new best dual = 113.549772
+iteration 245: new best dual = 113.549943
+iteration 309: new best dual = 113.549986
+iteration 373: new best dual = 113.549996
+iteration 437: new best dual = 113.549999
+iteration 501: new best dual = 113.550000
+iteration 565: new best dual = 113.550000
+iteration 629: new best dual = 113.550000
+iteration 693: new best dual = 113.550000
+iteration 757: new best dual = 113.550000
+iteration 821: new best dual = 113.550000
+iteration 885: new best dual = 113.550000
+iteration 949: new best dual = 113.550000
+iteration 1013: new best dual = 113.550000
+iteration 1077: new best dual = 113.550000
+iteration 1141: new best dual = 113.550000
+iteration 1205: new best dual = 113.550000
+iteration 1269: new best dual = 113.550000
+iteration 1394: new best dual = 113.550000
+113.550000 1394
+152 -1
+11.000000

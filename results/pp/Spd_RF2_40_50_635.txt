@@ -1,0 +1,11 @@
+iteration -1: new best dual = 1.000000
+iteration -1: new best primal = 10
+iteration 0: new best dual = 2.500000
+iteration 1: new best dual = 2.861111
+iteration 1: new best primal = 9
+iteration 2: new best dual = 3.117995
+iteration 3: new best dual = 3.343159
+iteration 4: new best dual = 3.350000
+3.350000 4
+9 -1
+11.000000
