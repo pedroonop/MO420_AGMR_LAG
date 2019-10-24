@@ -1,36 +1,3 @@
-iteration -1: new best primal = 2
-iteration 0: new best dual = 0.166667
-iteration 1: new best dual = 0.166667
-iteration 2: new best dual = 0.202116
-iteration 3: new best dual = 0.217593
-iteration 5: new best dual = 0.236883
-iteration 7: new best dual = 0.242915
-iteration 9: new best dual = 0.256516
-iteration 11: new best dual = 0.264153
-iteration 13: new best dual = 0.274095
-iteration 14: new best dual = 0.286175
-iteration 14: new best primal = 1
-iteration 15: new best dual = 0.297699
-iteration 16: new best dual = 0.300451
-iteration 17: new best dual = 0.301545
-iteration 20: new best dual = 0.309199
-iteration 22: new best dual = 0.316684
-iteration 23: new best dual = 0.319193
-iteration 25: new best dual = 0.320281
-iteration 27: new best dual = 0.324127
-iteration 28: new best dual = 0.332534
-iteration 30: new best dual = 0.337645
-iteration 32: new best dual = 0.340533
-iteration 35: new best dual = 0.341130
-iteration 36: new best dual = 0.342730
-iteration 39: new best dual = 0.345065
-iteration 40: new best dual = 0.347420
-iteration 41: new best dual = 0.350022
-iteration 44: new best dual = 0.357731
-iteration 47: new best dual = 0.358791
-iteration 51: new best dual = 0.363790
-iteration 59: new best dual = 0.364982
-iteration 63: new best dual = 0.366667
 0.366667 63
-1 -1
-11.000000
+1 14
+3698775

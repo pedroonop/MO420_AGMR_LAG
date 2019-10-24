@@ -1,8 +1,3 @@
-iteration -1: new best primal = 1
-iteration 1434: new best dual = 0.000000
-iteration 1469: new best dual = 0.000000
-iteration 1472: new best dual = 0.000000
-iteration 1528: new best dual = 0.000000
 0.000000 1528
 1 -1
-11.000000
+3525287

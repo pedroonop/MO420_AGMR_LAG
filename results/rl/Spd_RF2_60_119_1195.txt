@@ -1,9 +1,3 @@
-iteration 0: new best dual = 0.625000
-iteration 0: new best primal = 12
-iteration 3: new best primal = 10
-iteration 33: new best primal = 9
-iteration 197: new best primal = 8
-iteration 250: new best primal = 6
 0.625000 0
-6 -1
-11.000000
+6 250
+995378

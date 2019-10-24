@@ -1,18 +1,3 @@
-iteration -1: new best dual = 1.000000
-iteration -1: new best primal = 12
-iteration 0: new best dual = 2.571429
-iteration 1: new best dual = 2.724397
-iteration 2: new best dual = 3.181959
-iteration 3: new best dual = 3.413758
-iteration 4: new best dual = 3.580561
-iteration 5: new best dual = 3.597056
-iteration 6: new best dual = 3.622484
-iteration 7: new best dual = 3.671007
-iteration 8: new best dual = 3.674936
-iteration 10: new best dual = 3.694528
-iteration 13: new best dual = 3.700523
-iteration 65: new best primal = 11
-iteration 66: new best dual = 3.702381
 3.702381 66
-11 -1
-11.000000
+11 65
+1011683

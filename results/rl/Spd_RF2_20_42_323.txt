@@ -1,5 +1,3 @@
-iteration 0: new best primal = 2
-iteration 104: new best primal = 1
 0.000000 -1
-1 -1
-11.000000
+1 104
+2634099
