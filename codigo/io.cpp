@@ -30,3 +30,22 @@ graph read_graph(const char *file_name){
 
 	return g;
 }
+
+void write_data(const char *file_name, graph g, float dual, int dk, int primal, int pk, int k, vector<bool> solution){
+	ofstream file;
+	file.open(file_name);
+
+	file << fixed << setprecision(6);
+
+	file << dual << endl;
+	file << dk << endl;
+	file << primal << endl;
+	file << pk << endl;
+	file << k << endl;
+
+	for (int i = 0; i < g.m; i++){
+		if (solution[i]) file << g.edges[i].ff << " " << g.edges[i].ss << endl;
+	}
+
+	file.close();
+}
